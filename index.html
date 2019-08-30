@@ -1,0 +1,11 @@
+<script type="text/javascript" src="./dist/web/api-client.js"></script>
+<script type="text/javascript" >
+  const client = new ApiClient();
+  client.getObjects().then(resp => {
+    document.getElementById('content').innerHTML = JSON.stringify(resp.data, null, 2);
+  })
+</script>
+
+<h1>Example:</h1>
+<div id="content">
+</div>
