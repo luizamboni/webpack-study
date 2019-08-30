@@ -2,7 +2,7 @@
 <script type="text/javascript" >
   const client = new ApiClient();
   client.getObjects().then(resp => {
-    document.getElementById('content').innerHTML = JSON.stringify(resp.data, null, 2);
+      document.getElementById('content').innerHTML = JSON.stringify(resp.data, null, 2);
   })
 </script>
 
